@@ -33,8 +33,9 @@
 #include <linux/uaccess.h>
 #include <linux/random.h>
 
+
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("ChatGPT (experimental)");
+MODULE_AUTHOR("OS project");
 MODULE_DESCRIPTION("Experimental RL scheduler prototype - adjusts nice values using Q-learning (integer math)");
 MODULE_VERSION("0.2");
 
@@ -46,10 +47,10 @@ static unsigned int interval_ms = 1000; /* sampling interval in ms */
 static int action_step = 5;       /* change in nice per action (capped) */
 
 module_param(alpha_permille, int, 0644);
-MODULE_PARM_DESC(alpha_permille, "Learning rate ×1000 (e.g. 200 = 0.2)");
+MODULE_PARM_DESC(alpha_permille, "Learning rate × 1000 (e.g. 200 = 0.2)");
 
 module_param(gamma_permille, int, 0644);
-MODULE_PARM_DESC(gamma_permille, "Discount factor ×1000 (e.g. 900 = 0.9)");
+MODULE_PARM_DESC(gamma_permille, "Discount factor × 1000 (e.g. 900 = 0.9)");
 
 module_param(epsilon_permille, int, 0644);
 MODULE_PARM_DESC(epsilon_permille, "Exploration prob ×1000 (e.g. 200 = 0.2)");
