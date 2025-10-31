@@ -1,2 +1,5 @@
-.vscode
+# Ignore VS Code settings folder
+.vscode/
+
+# Ignore the specific Word document
 os_project_setup_5sem_with_test_case.docx
