@@ -35,7 +35,7 @@
 
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Design Project");
+MODULE_AUTHOR("OS project");
 MODULE_DESCRIPTION("Experimental RL scheduler prototype - adjusts nice values using Q-learning (integer math)");
 MODULE_VERSION("0.2");
 
